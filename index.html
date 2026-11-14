@@ -3,118 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of a web developer skilled in Java, HTML and CSS.">
-  <title>Onah David | Web Developer</title>
+  <meta name="description" content="Onah David is a developer working with Java, HTML and CSS, focused on responsive and user-friendly web experiences.">
+  <meta name="theme-color" content="#0a1020">
+  <meta property="og:title" content="Onah David | Developer Portfolio">
+  <meta property="og:description" content="Explore the portfolio, skills and work of Onah David.">
+  <title>Onah David | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="logo" href="#home">OnahDavid<span>.</span></a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <ul class="nav-links">
+      <a class="logo" href="#home" aria-label="Onah David home">OD<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a class="nav-cta" href="#contact">Contact</a></li>
+        <li><a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero container" id="home">
       <div class="hero-copy">
-        <p class="eyebrow">JAVA · HTML · CSS</p>
-        <h1>Hello, I'm <span>Onah David</span>.<br>I build for the web.</h1>
-        <p class="intro">I'm a developer interested in building useful, accessible and responsive web experiences. I enjoy turning ideas into clear, practical digital products.</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span> JAVA · HTML · CSS</p>
+        <h1>Building useful things <span class="gradient-text">for the web.</span></h1>
+        <p class="hero-description">Hi, I'm <strong>Onah David</strong> — a developer building my skills in Java, HTML and CSS. I enjoy turning ideas into clear, responsive and user-friendly digital experiences.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#projects">View my work</a>
-          <a class="button secondary" href="#contact">Contact me</a>
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-ghost" href="mailto:onahdavid403@gmail.com">Contact me <span aria-hidden="true">↗</span></a>
         </div>
+        <div class="hero-note"><span class="status-dot"></span> Open to learning and development opportunities</div>
       </div>
-      <div class="hero-card" aria-label="Developer introduction">
-        <div class="avatar">OD</div>
-        <p class="card-label">CURRENT FOCUS</p>
-        <h2>Building and learning</h2>
-        <p>Frontend foundations, Java programming, and responsive design.</p>
-        <div class="availability"><span></span> Open to opportunities</div>
+      <div class="hero-visual" aria-label="Developer profile graphic">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="profile-tile">
+          <div class="profile-top"><span>DEVELOPER PROFILE</span><span class="profile-dots">•••</span></div>
+          <div class="monogram">OD</div>
+          <h2>Onah David</h2>
+          <p>Java · HTML · CSS</p>
+          <div class="profile-divider"></div>
+          <div class="profile-bottom"><span>Curious mind.</span><span>Practical builder.</span></div>
+        </div>
+        <div class="floating-chip chip-code"><span class="chip-icon">&lt;/&gt;</span> Clean code</div>
+        <div class="floating-chip chip-responsive"><span class="chip-icon">▣</span> Responsive design</div>
       </div>
     </section>
 
+    <div class="ticker" aria-label="Development interests">
+      <div class="ticker-inner"><span>JAVA PROGRAMMING</span><i>✳</i><span>WEB DEVELOPMENT</span><i>✳</i><span>RESPONSIVE DESIGN</span><i>✳</i><span>CONTINUOUS LEARNING</span><i>✳</i></div>
+    </div>
+
     <section class="section container" id="about">
-      <p class="eyebrow">ABOUT ME</p>
-      <h2 class="section-title">A little about me</h2>
-      <p class="section-text">I work with HTML and CSS to structure and style web pages, and Java for programming and application logic. I care about readable code, thoughtful layouts and making websites work well on phones, tablets and desktops. I'm continuing to grow my skills through hands-on projects.</p>
+      <div class="section-heading">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Learning, building<br><span class="muted-heading">and getting better.</span></h2>
+      </div>
+      <div class="about-content">
+        <p class="about-lead">I’m interested in creating digital experiences that are useful, easy to navigate and accessible across devices.</p>
+        <p class="body-copy">I use HTML to structure web pages, CSS to style responsive layouts, and Java to develop programming logic and applications. I value clear communication, readable code and steady improvement through hands-on practice.</p>
+        <a class="text-link" href="https://github.com/davidonah403-beep" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
 
     <section class="section skills-section" id="skills">
       <div class="container">
-        <p class="eyebrow">WHAT I USE</p>
-        <h2 class="section-title">Skills</h2>
-        <div class="skill-grid">
-          <article class="skill-card"><h3>HTML</h3><p>Semantic page structure and accessible content.</p></article>
-          <article class="skill-card"><h3>CSS</h3><p>Layouts, styling, media queries and responsive design.</p></article>
-          <article class="skill-card"><h3>Java</h3><p>Programming fundamentals and application logic.</p></article>
+        <div class="section-heading section-heading-row">
+          <div><p class="eyebrow">02 / TOOLKIT</p><h2>Skills I’m building<br><span class="muted-heading">with every project.</span></h2></div>
+          <p class="section-aside">The tools I use to turn ideas into working interfaces and applications.</p>
         </div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-card-top"><span class="skill-symbol">5</span><span class="skill-index">01</span></div><h3>HTML</h3><p>Semantic structure, meaningful content and accessible page foundations.</p><p class="skill-focus">FOCUS AREA</p></article>
+          <article class="skill-card"><div class="skill-card-top"><span class="skill-symbol">✳</span><span class="skill-index">02</span></div><h3>CSS</h3><p>Visual styling, flexible layouts, media queries and responsive interfaces.</p><p class="skill-focus">FOCUS AREA</p></article>
+          <article class="skill-card"><div class="skill-card-top"><span class="skill-symbol">☕</span><span class="skill-index">03</span></div><h3>Java</h3><p>Programming fundamentals, application logic and problem-solving practice.</p><p class="skill-focus">FOCUS AREA</p></article>
+        </div>
+        <p class="skills-footnote">Skills shown are areas of focus, not proficiency ratings.</p>
       </div>
     </section>
 
     <section class="section container" id="projects">
-      <p class="eyebrow">SELECTED WORK</p>
-      <h2 class="section-title">Projects</h2>
-      <p class="section-text">Replace these sample cards with projects you have actually built. Do not present sample projects as completed work.</p>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-number">01</div>
-          <h3>Responsive Website</h3>
-          <p>A website layout designed to adapt to desktop, tablet and mobile screens.</p>
-          <p class="tags">HTML · CSS</p>
-          <a href="#" class="project-link">Add project link ↗</a>
-        </article>
-        <article class="project-card">
-          <div class="project-number">02</div>
-          <h3>Java Application</h3>
-          <p>A Java project that demonstrates programming logic and problem-solving.</p>
-          <p class="tags">JAVA</p>
-          <a href="#" class="project-link">Add project link ↗</a>
-        </article>
-        <article class="project-card">
-          <div class="project-number">03</div>
-          <h3>Personal Project</h3>
-          <p>Add a short, honest description of another project you have completed.</p>
-          <p class="tags">HTML · CSS · JAVA</p>
-          <a href="#" class="project-link">Add project link ↗</a>
-        </article>
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">03 / SELECTED WORK</p><h2>Work in progress.<br><span class="muted-heading">Built with purpose.</span></h2></div>
+        <p class="section-aside">A growing collection of practical work and learning projects.</p>
       </div>
+      <article class="featured-project">
+        <div class="project-preview">
+          <div class="preview-window">
+            <div class="preview-bar"><span></span><span></span><span></span><b>onahdavid.dev</b></div>
+            <div class="preview-content"><div class="preview-kicker">JAVA · HTML · CSS</div><div class="preview-title">Building useful<br><em>things for the web.</em></div><div class="preview-button"></div><div class="preview-blocks"><i></i><i></i><i></i></div></div>
+          </div>
+          <span class="preview-caption">01 — LIVE WEBSITE</span>
+        </div>
+        <div class="project-details">
+          <p class="eyebrow">FEATURED PROJECT / 01</p>
+          <h3>Personal Developer Portfolio</h3>
+          <p>A responsive portfolio website introducing my development interests, skills and contact details. Built with HTML and CSS, with a small JavaScript interaction for mobile navigation.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+          <div class="project-actions">
+            <a class="button button-primary" href="https://davidonah403-beep.github.io/" target="_blank" rel="noopener noreferrer">View live site ↗</a>
+            <a class="text-link" href="https://github.com/davidonah403-beep/davidonah403-beep.github.io" target="_blank" rel="noopener noreferrer">View source on GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+      <div class="coming-soon"><span class="coming-icon">＋</span><div><h3>More projects are on the way</h3><p>I'm continuing to build practical Java and web development projects. This section will grow as I complete and publish them.</p></div><span class="coming-label">IN PROGRESS</span></div>
     </section>
 
-    <section class="section contact-section" id="contact">
+    <section class="contact-section" id="contact">
       <div class="container contact-inner">
-        <div>
-          <p class="eyebrow">GET IN TOUCH</p>
-          <h2 class="section-title">Let's talk about your next project.</h2>
-          <p class="section-text">I'm interested in opportunities to learn, contribute and build useful software.</p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:onahdavid403@gmail.com">onahdavid403@gmail.com</a>
-          <a href="#" aria-label="GitHub profile link pending username confirmation">GitHub profile — link to be added</a>
-          <a href="#" aria-label="LinkedIn profile link not provided">LinkedIn profile — add your link</a>
+        <div><p class="eyebrow">04 / CONTACT</p><h2>Have an opportunity<br>or an idea? <span>Let’s connect.</span></h2><p class="contact-copy">I’m interested in opportunities to learn, contribute and grow as a developer.</p></div>
+        <div class="contact-card">
+          <p class="contact-label">SEND ME AN EMAIL</p>
+          <a class="email-link" href="mailto:onahdavid403@gmail.com">onahdavid403@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-rule"></div>
+          <p class="contact-label">FIND ME ONLINE</p>
+          <a class="social-link" href="https://github.com/davidonah403-beep" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">© <span id="year"></span> Onah David. Built with HTML and CSS.</div>
-  </footer>
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="#home">OD<span>.</span></a><p>Designed and built by Onah David.</p><a href="#home">Back to top ↑</a><span>© <span id="year"></span></span></div></footer>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     const toggle = document.querySelector(".menu-toggle");
-    const links = document.querySelector(".nav-links");
+    const navLinks = document.querySelector(".nav-links");
     toggle.addEventListener("click", () => {
-      const isOpen = links.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
+      const open = navLinks.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
     });
+    navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open navigation menu");
+    }));
   </script>
 </body>
 </html>
